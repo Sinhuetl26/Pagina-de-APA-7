@@ -231,3 +231,43 @@ section p {
       margin: 10px auto; /* Centra las imágenes */
    }
 }
+.conclusiones {
+   background-color: #e9f7fd; /* Color de fondo suave */
+   padding: 20px; /* Espaciado interno */
+   border-radius: 10px; /* Bordes redondeados */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+   margin-top: 30px; /* Margen superior */
+   opacity: 0; /* Inicia invisible para la animación */
+   transform: translateY(20px); /* Desplazamiento hacia abajo */
+   animation: fadeInUp 0.5s forwards; /* Animación de entrada */
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+   to {
+       opacity: 1; /* Finaliza visible */
+       transform: translateY(0); /* Finaliza en su posición original */
+   }
+}
+
+.conclusiones h2 {
+   color: #004080; /* Color del título */
+   margin-bottom: 15px; /* Espaciado inferior del título */
+}
+
+.conclusion {
+   margin-bottom: 20px; /* Espaciado entre cada conclusión */
+}
+
+.conclusiones h3 {
+   color: #002147; /* Color de los subtítulos */
+   margin-bottom: 5px; /* Espaciado inferior del subtítulo */
+   font-weight: 600; /* Peso del texto más fuerte */
+}
+
+.conclusion p {
+   margin: 0; /* Sin margen para los párrafos dentro de conclusiones */
+   line-height: 1.6; /* Aumento de interlineado */
+   font-size: 1em; /* Tamaño de fuente estándar */
+   color: #333; /* Color del texto */
+}
