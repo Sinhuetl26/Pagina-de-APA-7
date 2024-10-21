@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citar en APA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 role="banner" aria-label="Cómo citar y referenciar en formato APA en diferentes formatos">
+            Como citar y referenciar en formato APA en diferentes formatos
+        </h1>
+        <nav role="navigation">
+            <ul class="main-nav">
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="referencias.html">Referencias</a></li>
+            </ul>
+            <ul class="menu-desplegable">
+                <li class="dropdown">
+                    <input type="text" placeholder="Buscar formatos" id="buscar" onkeyup="filtrarFormatos()" aria-label="Buscar formatos">
+                    <div class="dropdown-content" id="formatos">
+                        <a href="#c-archivosPdf">Libro Electrónico</a>
+                        <a href="#c-instagram">Publicación de Instagram</a>
+                        <a href="#c-tiktok">Video de Tiktok</a>
+                        <a href="#c-youtube">Video de Youtube</a>
+                        <a href="#c-wikipedia">Artículo de Wikipedia</a>
+                        <a href="#c-twitter-x">Publicación en X (Twitter)</a>
+                        <a href="#c-facebook">Publicación de Facebook</a>
+                        <a href="#c-libroConAutor">Libro con Autor</a>
+                        <a href="#c-libroConEditor">Libro con Editor</a>
+                        <a href="#c-libroElectronicos">Libros Electrónicos</a>
+                        <a href="#c-librosElectronicosconDoi">Libros Electrónicos con DOI</a>
+                        <a href="#c-capituloDeUnLibro">Capítulo de un Libro</a>
+                        <a href="#c-trabajoDeTesis">Trabajo de Tesis</a>
+                        <a href="#c-articulosCientificos">Artículos Científicos</a>
+                        <a href="#c-enciclopedia">Enciclopedia</a>
+                        <a href="#c-periodico">Periódico</a>
+                        <a href="#c-diccionarios">Diccionarios</a>
+                        <a href="#c-peliculas">Películas</a>
+                        <a href="#c-canciones">Canciones</a>
+                        <a href="#c-fotografias">Fotografías</a>
+                        <a href="#c-paginasWeb">Páginas Web</a>
+                        <a href="#c-articulosWebSA">Artículos Web Sin Autor</a>
+                        <a href="#c-articuloWebSF">Artículo Web Sin Fecha</a>
+                        <a href="#c-articuloWebST">Artículo Web Sin Título</a>
+                        <a href="#c-articuloWebSFST">Artículo Web Sin Fecha Sin Título</a>
+                    </div>
+                </li>
+            </ul>                  
+        </nav>
+    </header>    
+<main role="main">
+    <section id="c-archivosPdf">
+        <h2>Libro Electronico</h2>
+        <p>Sintaxis: (Autor, Año)</p>
+        <p>Ejemplo: (García, 2020)</p>
+    </section>
+    <section  id="c-instagram">
+        <h2>Publicacion de Instagram</h2>
+        <p>Sintaxis: Autor, Inicial del nombre. [@NombreUsuario]. (Año, Mes Día). Plataforma.</p>
+        <p>Ejemplo: Gómez, L. [@gomezluis]. (2022, mayo 5).Instagram </p>
+    </section>
+    <section id="c-tiktok">
+        <h2>Video de Tiktok</h2>
+        <p>Sintaxis: Usuario (Año, Mes Día) [Video]. Plataforma.</p>
+        <p>Ejemplo: Usuario  (2023, 10 de octubre) [Video]. TikTok.</p>
+    </section>
+    <section id="c-youtube">
+        <h2>Video de Youtube</h2>
+        <p>Sintaxis: Autor, Inicial del nombre. [@NombreUsuario]. (Año, Mes Día). Plataforma.</p>
+        <p>Ejemplo: Gómez, L. [@gomezluis]. (2022, mayo 5). Youtube</p>
+    </section>
+    <section id="c-wikipedia">
+        <h2>Articulo de Wikipedia</h2>
+        <p>Sintaxis: (Título del artículo, Año)</p>
+        <p>Ejemplo: (Historia de México, 2024)</p>
+    </section>
+    <section id="c-twitter-x">
+        <h2>Publicacion en X (twiter)</h2>
+        <p>Sintaxis: (@NombreUsuario, Año)</p>
+        <p>Ejemplo: (@usuario, 2024)</p>
+    </section>
+    <section id="c-facebook">
+        <h2>Publicacion de Facebook</h2>
+        <p>Sintaxis: (Nombre Completo, Año)</p>
+        <p>Ejemplo: (Juan Pérez, 2024)</p>
+    </section>
+    <section id="c-libroConAutor">
+        <h2>Libro con Autor</h2>
+        <p>Sintaxis: (Autor, Año)</p>
+        <p>Ejemplo: (García Márquez, 1967)</p>
+    </section>
+    <section id="c-libroConEditor">
+        <h2>Libro con Editor</h2>
+        <p>Sintaxis: (Editor, Año)</p>
+        <p>Ejemplo: (Díaz, 2015)</p>
+    </section>
+    <section id="c-libroElectronicos">
+        <h2>Libros Electronicos</h2>
+        <p>Sintaxis: (Autor, Año)</p>
+        <p>Ejemplo: (García Márquez, 2015)</p>
+    </section>
+    <section id="c-librosElectronicosconDoi">
+        <h2>Libros Electronicos con DOI</h2>
+        <p>Sintaxis: Autor, Inicial del nombre., & SegundoAutor, Inicial del nombre. (Año). Título. Editorial.</p>
+        <p>Ejemplo: Hidalgo, D., & Torres, F. (2016). La navaja suiza del reportero: herramientas de investigación en la era de los datos masivos. Consejo de la Prensa Peruana.</p>
+    </section>
+    <section id="c-capituloDeUnLibro">
+        <h2>Capitulo de un Libro</h2>
+        <p>Sintaxis: Autor, Inicial del nombre. (Año). Título del capítulo. En Editor, Inicial del nombre (Ed.), Título del libro (pp. páginas). Editorial.</p>
+        <p>Ejemplo: Soto Álvarez, J. (2012). Medición y evaluación de los resultados en salud en las evaluaciones económicas. pp 53-62</p>
+    </section>
+    <section id="c-trabajoDeTesis">
+        <h2>Trabajo de Tesis</h2>
+        <p>Sintaxis: Autor, Inicial del nombre. (Año). Título de la tesis [Tipo de tesis, Universidad]. Repositorio.</p>
+        <p>Ejemplo: De Luca Jorquera, V. A. (2019). Efecto de la incorporación de sabores dulce y umami en la dieta de cerdas sobre su composición láctea y posterior impacto en el crecimiento de la progenie [Título profesional, Universidad de Chile]. Repositorio Académico de la Universidad de Chile</p>
+    </section>
+    <section id="c-articulosCientificos">
+        <h2>Articulos Cientificos</h2>
+        <p>Sintaxis: "Cita exacta" (Autor, Año, p. página).</p>
+        <p>Ejemplo: "El ejercicio físico mejora significativamente la salud mental" (Pérez, 2020, p. 125).</p>
+    </section>
+    <section id="c-enciclopedia">
+        <h2>Enciclopedia</h2>
+        <p>Sintaxis: Autor, Inicial del nombre. (Año). Título del artículo. En Título de la enciclopedia (Volumen, pp. páginas). Editorial.</p>
+        <p>Ejemplo: Smith, J. (2020). Historia de la ciencia. En Enciclopedia de la ciencia (Vol. 2, pp. 45-67). Editorial Académica.</p>
+    </section>
+    <section id="c-periodico">
+        <h2>Periodico</h2>
+        <p>Sintaxis: Fuente. (Año, Mes Día). Título del artículo.</p>
+        <p>Ejemplo: El País. (2024, 15 de octubre). 10 días sin saber de Sandra Domínguez, la activista que exhibió la misoginia del poder en Oaxaca.</p>
+    </section>
+    <section id="c-diccionarios">
+        <h2>Diccionarios</h2>
+        <p>Sintaxis: (Editorial, Año)</p>
+        <p>Ejemplo: (Harper Collins, 2019)</p>
+    </section>
+    <section id="c-peliculas">
+        <h2>Peliculas</h2>
+        <p>Sintaxis: (Director, Año, Tiempo)</p>
+        <p>Ejemplo: (Scott, 1979, 0:45:14)</p>
+    </section>
+    <section id="c-canciones">
+        <h2>Canciones</h2>
+        <p>Sintaxis: "Letra de la canción" (Artista, Año, Tiempo)</p>
+        <p>Ejemplo: “La felicidad que ya perdí, anegado en este mar de llantos” (Ned, 1971, 1m40s)</p>
+    </section>
+    <section id="c-fotografias">
+        <h2>Fotografias</h2>
+        <p>Sintaxis: Autor, Inicial del nombre. (Año). Título de la imagen [Formato]. Recuperado de URL</p>
+        <p>Ejemplo: Smith, J. (2018). Paisaje en la mañana [Fotografía]. Recuperado de: https://www.ejemplo.com/imagen</p>
+    </section>
+    <section id="c-paginasWeb">
+        <h2>Paginas Web</h2>
+        <p>Sintaxis: Título del artículo. (Año, Mes Día). Recuperado de URL</p>
+        <p>Ejemplo: 2 Cambios globales.(2019, Junio 17). Recuperado de: http://cambios.com/cambios-globales</p>
+    </section>
+    <section id="c-articulosWebSA">
+        <h2>Articulos Web Sin Autor</h2>
+        <p>Sintaxis: (Apellido, Año, Mes Día). Título del artículo. Nombre del sitio web. URL</p>
+        <p>Ejemplo: Pérez, M. (2021, mayo 15). La importancia de la sostenibilidad en la moda. EcoTrends. https://www.ecotrends.com/moda-sostenible</p>
+    </section>
+    <section id="c-articuloWebSF">
+        <h2>Articulo Web Sin Fecha</h2>
+        <p>Sintaxis:(Apellido, s.f.)</p>
+        <p>Ejemplo: (Gomez, s.f)</p>
+    </section>
+    <section id="c-articuloWebST">
+        <h2>Articulo Web Sin Titulo</h2>
+        <p>Sintaxis: (Apellido, Año)</p>
+        <p>Ejemplo: (Gomez, 2020)</p>
+    </section>
+    <section id="c-articuloWebSFST">
+        <h2>Articulo Web Sin Fecha Sin Titulo</h2>
+        <p>Sintaxis: (Apellido, s.f.)</p>
+        <p>Ejemplo: (Gomez, s.f)</p>
+    </section>
+</main>
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,3 +1,233 @@
-h1 {
-    color: red;
+/* Estilos globales */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+   background-color: #f7f7f7;
+   color: #333;
+   line-height: 1.8; /* Aumento del interlineado */
+   font-size: 18px; /* Tamaño de fuente base más grande */
+   padding: 20px;
+}
+
+a:focus, button:focus, input:focus {
+   outline: 3px solid #004080;
+   outline-offset: 2px;
+}
+
+p {
+   margin-bottom: 1.5em; /* Espacio entre párrafos */
+}
+
+h2 {
+   font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+   font-weight: 700; /* Peso más pesado para los títulos */
+   color: #004080;
+   margin-bottom: 10px;
+}
+
+/* Estilos del encabezado */
+header {
+   background-color: #01366c;
+   color: white;
+   padding: 20px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+/* Estilos del nav */
+nav {
+   background-color: #004080;
+   padding: 5px 0;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   align-items: center;
+}
+
+nav .main-nav,
+nav .main-nav-2 {
+   flex: 1; /* Asegura que tome el espacio necesario para centrarse */
+   display: flex;
+   justify-content: center; /* Centra los elementos dentro del main-nav */
+   align-items: center; /* Alinea verticalmente en el centro */
+}
+
+nav .menu-desplegable {
+   margin-left: auto;
+}
+
+nav ul li {
+   margin: 0 20px;
+}
+
+nav ul li a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 1.2em;
+   padding: 10px 20px;
+   transition: background-color 0.3s, transform 0.3s;
+   border-radius: 5px;
+}
+
+nav ul li a:hover {
+   background-color: #ffffff;
+   color: #002147;
+   transform: scale(1.1);
+}
+
+#buscar {
+   padding: 8px;
+   font-size: 1em;
+   border: none;
+   border-radius: 5px;
+   width: 200px; /* Ajustamos el ancho a 200px */
+   transition: background-color 0.3s ease;
+}
+
+#buscar:hover {
+   background-color: #ddd;
+}
+
+.dropdown {
+   position: relative; /* Mantener el contenedor relativo */
+}
+
+.dropdown-content {
+   display: none; /* Cambiado a none para ocultar inicialmente */
+   position: absolute; /* Posición absoluta para aparecer debajo de la barra de búsqueda */
+   left: 0;
+   top: 100%; /* Asegúrate de que aparezca justo debajo del input */
+   background-color: #fff;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1; /* Asegura que esté encima de otros elementos */
+   border-radius: 5px;
+   width: 100%; /* Ajusta el ancho al 100% del contenedor */
+   max-height: none; /* Sin límite de altura */
+   overflow: visible; /* Asegura que todos los enlaces sean visibles */
+}
+
+/* Estilo para los enlaces que se muestran */
+.dropdown-content a {
+   display: block; /* Mostrar todos los enlaces */
+   padding: 8px; /* Espacio dentro de cada enlace */
+   color: #002147; /* Color del texto */
+   text-decoration: none; /* Sin subrayado */
+   font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+.dropdown-content.show {
+   display: block; /* Muestra el menú cuando hay coincidencias */
+}
+
+@keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
+/* Estilos del contenido principal */
+main {
+   background-color: white;
+   padding: 20px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+   margin-bottom: 30px;
+}
+
+section h2 {
+   color: #004080;
+   margin-bottom: 10px;
+}
+
+section p {
+   margin-bottom: 10px;
+   font-size: 1.1em;
+}
+/* Estilos de nombres */
+.h2-equipo {
+   color: #002147;
+   font-size: 2em;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.nombres {
+   list-style-type: none;
+   padding: 0;
+   display: flex; /* Utiliza flexbox para alinear los elementos en línea */
+   justify-content: space-between; /* Espacio uniforme entre los elementos */
+   margin: 0 auto;
+   width: 100%;
+}
+
+.nombres .nombre {
+   flex: 1; /* Permite que cada elemento tome el mismo espacio */
+   margin: 5px; /* Ajuste del margen para separar los nombres */
+   padding: 10px;
+   background-color: #e6f7ff;
+   border-radius: 5px;
+   transition: transform 0.3s, background-color 0.3s;
+   font-size: 1em;
+   color: #002147;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center; /* Centra el texto dentro de cada nombre */
+}
+
+.nombres .nombre:hover {
+   background-color: #add8e6;
+   transform: scale(1.1);
+}
+
+/* Estilos de imágenes */
+.imagenes {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: nowrap;
+   margin-top: 20px;
+   width: 100%;
+}
+
+.imagenes .miembro {
+   width: 23%; /* Ajusta el ancho para que las 4 imágenes ocupen todo el ancho de la pantalla */
+   height: 300px; /* Ajusta la altura automáticamente */
+   margin: 0 5px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s;
+   object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+}
+
+.imagenes .miembro:hover {
+   transform: scale(1.1);
+}
+
+/* Medidas responsivas */
+@media (max-width: 768px) {
+   nav ul {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+   }
+
+   .imagenes {
+      flex-direction: column; /* Cambia a columna para las imágenes en pantallas pequeñas */
+   }
+
+   .imagenes .miembro {
+      width: 90%; /* Ancho del 90% para las imágenes en móviles */
+      margin: 10px auto; /* Centra las imágenes */
+   }
 }
